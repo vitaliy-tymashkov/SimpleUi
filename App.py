@@ -22,7 +22,7 @@ def get_post(post_id):
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '771006'
+app.config['SECRET_KEY'] = 'xxxxxx'
 
 
 
