@@ -25,14 +25,19 @@ pip -install -r requirements.txt
 
 
 +++++++++++++++++
+##To build an image
 
-docker build -t ocr01:latest . &&\
+docker build -t ocr01:latest .
+&&\
+
 docker run -d --name ocr01c -p 8080:57777 ocr01 &&\
+
+
 docker exec -it ocr01c /bin/bash
 
 
 
-
+###Other commands
 docker stop ocr01c && docker rm ocr01c && docker rmi ocr01
 
 
